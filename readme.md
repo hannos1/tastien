@@ -35,3 +35,66 @@
      全局配置 git config --global user.name "hannos1"
       git config --global user.email "1972105453@qq.com"
       git init
+      git add .
+      git commit -m 'first commit'
+      git remote add origin https://github.com/hannos1/tastien.git
+
+      git config --global http.sslVerify false
+      git push -u origin master
+
+      ssh-keygen -t rsa -C '1972105453@qq.com'
+      cd .\.ssh\
+      cat .\id_rsa.pub
+
+- 滴滴swiper 多页活动菜单功能
+  1. 用户体验 less is more
+      菜单太多，用户会觉得臃肿 只放重要的在首页
+      其他可以多放
+      技术难度
+      1. swiper > 2 swiper-item
+      2. swiper 高度  变化的   等高的
+            2行
+      3. class="didi_menus {{higher_menus}}"
+      {{}} 占位符 里面是返回的数据
+
+- 数据响应式编程
+  它是一种思想 有别于DOM编程API
+  设置一些页面效果，操作的不是DOM，
+  操作是数据，因为数据一旦改变，页面刷新
+  1. 滴滴可变高度的项目首页菜单
+  2. tabbar 组件
+    data 添加 tab 属性 ，表示当前哪个tab被激活
+    tab-item 添加bindtap 事件
+    tab-item data-tab 数据属性 data-
+    e.currentTarget.dataset.tab 数据
+    3. 外卖品类级菜单数据设计
+      2个scoll-view是有相关性的
+      2层嵌套的json结构
+      [分类数组
+        {
+          菜品数组:
+            [
+              {
+
+              },
+            ]
+        },
+      ]
+
+- css的技巧
+    1. 选择器优先级
+      标签 1 < 类名 10 < id 100 <         计算表达式
+    2. 行内样式，优先级更高
+    3. !important 最高 要慎用
+- 弹性布局
+  移动端 flex 可以解决大部分问题
+  布局的一种 跟外部不一样的布局   所有块级元素丢失块级能力  弹性布局归BFC管
+  Block formating context
+
+- BEM 国际命名规范
+  Block 开始 rx_tab 新的组件
+  Element 内部元素申明 rx_tab__item
+  Modifier rx_tab__item-on
+
+
+     
