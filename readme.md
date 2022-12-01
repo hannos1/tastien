@@ -81,6 +81,23 @@
         },
       ]
 
+- 奶茶小程序的门店选择页
+  1. LBS Location Base Service
+    高德 LBS 技术
+    美团
+  2. wx.getLocation
+  latitude longtitude
+  3. 
+
+
+  4. 
+    - .cell>.cell__hd+.cell__bd+.cell__ft
+    - .page>.page__hd+.page__bd+.page__ft
+    - __  Element 只做一级 用简单单词 不重复
+  5. 小程序不允许在wxss里面用background：url(本地图片)
+    - 小程序之所以小，不要做太多东西
+    - 包的大小小于2M
+
 - css的技巧
     1. 选择器优先级
       标签 1 < 类名 10 < id 100 <         计算表达式

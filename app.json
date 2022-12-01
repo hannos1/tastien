@@ -1,9 +1,11 @@
 {
   "pages": [
+    "pages/map/map",
     "pages/waimai/waimai",
     "pages/didi/didi",
     "pages/index/index",
     "pages/logs/logs"
+    
   ],
   "window": {
     "backgroundTextStyle": "light",
