@@ -6,6 +6,7 @@ Page({
    */
   data: {
     tab: 0,
+    catId:0,
     goods: [
 
       {

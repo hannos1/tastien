@@ -87,16 +87,7 @@
     美团
   2. wx.getLocation
   latitude longtitude
-  3. 
-
-
-  4. 
-    - .cell>.cell__hd+.cell__bd+.cell__ft
-    - .page>.page__hd+.page__bd+.page__ft
-    - __  Element 只做一级 用简单单词 不重复
-  5. 小程序不允许在wxss里面用background：url(本地图片)
-    - 小程序之所以小，不要做太多东西
-    - 包的大小小于2M
+  
 
 - css的技巧
     1. 选择器优先级
@@ -113,5 +104,23 @@
   Element 内部元素申明 rx_tab__item
   Modifier rx_tab__item-on
 
+- .cell>.cell__hd+.cell__bd+.cell__ft
+  .page>.page__hd+.page__bd+.page__ft
+  __  Element 只做一级 用简单单词 不重复
 
-     
+- 小程序不允许在wxss里面用background：url(本地图片)
+  小程序之所以小，不要做太多东西
+  包的大小小于2M
+
+- app.js globaldata 全局数据
+  video.js getApp() 一个小程序的内置方法,用于获取全局对象
+
+
+- 视频播放列表页逻辑
+  - 得有远程可播放视频
+  - 视频有poster 封面
+  - 显示和点击的是图片
+  - currentVid 逻辑切换
+    dataset.vid
+     img currentVid !== vid
+     video currentVid === vid
