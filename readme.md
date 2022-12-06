@@ -125,4 +125,19 @@
      img currentVid !== vid
      video currentVid === vid
 
+- 中大型应用 建议采用框架
+  有赞 vant
+  1. 小程序 变成node 项目
+    npm init -y
+  2. npm i @vant/weapp -S --production
+    node_modules/@vant 
+  3. 工具-构建npm
+    miniprogram_npm
+  4. app.json中拿掉style.v2
+  5. 引入我们要用的组件
+
+
+
+- Object.assign(Object,{key:value}) 把值赋给object
+
 

@@ -16,8 +16,31 @@ App({
         this.globalData.vehicles = vehicles;
       }
     })
+
+    wx.getSystemInfo({
+      success: res => {
+        let menuButtonObject = wx.getMenuButtonBoundingClientRect();
+        // console.log(menuButtonObject);
+        let statusBarHeight = res.statusBarHeight;
+        // console.log(statusBarHeight)
+        let navHeight = statusBarHeight + menuButtonObject.height + (menuButtonObject.top - statusBarHeight)*2
+        // console.log(navHeight)
+        let windowHeight = res.windowHeight;
+        let navTop = menuButtonObject.top
+        Object.assign(this.globalData,{
+          navHeight,
+          navTop,
+          windowHeight,
+          menuButtonObject
+        })
+      }
+    })
   },
   globalData: {
+    navHeight:0,
+    navTop:0,
+    windowHeight:0,
+    menuButtonObject:null,
     slides:null,
     stories:null,
     vehicles:null
